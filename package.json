@@ -1,0 +1,15 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "Game made with javascript",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "/m4zuu/Find-your-hat.git"
+  },
+  "author": "Mauricio Zamarripa, Codecademy",
+  "license": "ISC"
+}
