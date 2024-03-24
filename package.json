@@ -11,5 +11,8 @@
     "url": "/m4zuu/Find-your-hat.git"
   },
   "author": "Mauricio Zamarripa, Codecademy",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
