@@ -7,21 +7,30 @@ const pathCharacter = '*';
 
 class hatGame {
     constructor(field){
-        this.field = field
-        
+        this.field = field        
     }
 
     newField(){
-        let field = [ ]
+        let myfield = []
         let rows = prompt('How many rows the field will be? ')
+        let rowsN = parseInt(rows)
         let col = prompt('How many cells the field will be? ')
+        let colN = parseInt(col)
 
-        for (let i = 0 ; i <= rows ; i++){
-            field.push(fieldCharacter)
-            for(let j = 0; j<=col; j++){
-                field.push(fieldCharacter)
+        for (let i = 0 ; i < rowsN ; i++){
+            let row = []
+            for(let j = 0; j<=colN ; j++){
+                row.push(fieldCharacter)
             }
-            return field
+            myfield.push(row)
+        }
+        this.field = myfield
+        this.printField()
+    }
+
+    printField( ){
+        for (let i = 0 ; i < this.field.length ; i++){
+            console.log(this.field[i].join(' '))
         }
     }
 }
